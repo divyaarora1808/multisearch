@@ -11,7 +11,7 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
         case 'spreadsheets':
         case 'slides':
         case 'drive':
-        case 'github'
+        case 'github':
              break;
         default: search_engine = 'google';
         search_query = input;
@@ -31,25 +31,26 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             case 'docs':
                 image.src = 'docs.png';
                 image.alt = 'Google Docs icon';
+                break;
             case 'spotify':
-                image.src ='spotify.png';
+                image.src ='spotify.svg';
                 image.alt = 'Spotify icon';
                 break;
             case 'spreadsheets':
-                    image.src ='spreadsheets.png';
+                    image.src ='spreadsheets.svg';
                     image.alt = 'Spreadsheets icon';
                     break;
             case 'slides':
-                image.src ='slides.png';
+                image.src ='slides.svg';
                 image.alt = 'Slides icon';
                  break;
             case 'drive':
-                image.src ='drive.png';
+                image.src ='drive.svg';
                 image.alt = 'Drive icon';
                     break;
             
-            case 'Github':
-                    image.src ='github.png';
+            case 'github':
+                    image.src ='github.svg';
                     image.alt = 'Github icon';
                     break;
         }
@@ -64,9 +65,7 @@ document.querySelector('.search_input').addEventListener('keyup', e => {
             case 'spotify': 
                 window.location = `https://open.spotify.com/results?search_query=${search_query}`;
                 break;
-            case 'spotify': 
-                window.location = `https://open.spotify.com/results?search_query=${search_query}`;
-                break;
+           
             case 'spreadsheets': 
                 window.location = `https://www.google.com/sheets/about/results?search_query=${search_query}`;
                 break;
